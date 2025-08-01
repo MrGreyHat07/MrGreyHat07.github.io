@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS Pentest Checklist | MrGreyHat07</title>
+  <link rel="stylesheet" href="../style2.css">
+</head>
+<body>
+  <section class="section">
+    <h1>iOS Application Pentest Checklist</h1>
+    <ul>
+      <li>📦 <strong>App Package Inspection:</strong> Extract IPA, inspect Info.plist, verify permissions, entitlements, and URL schemes.</li>
+      <li>🔐 <strong>Authentication & Session Management:</strong> Test login mechanisms, session timeouts, Touch ID/Face ID logic, and token handling.</li>
+      <li>📲 <strong>Local Data Storage:</strong> Check for sensitive data in plist, CoreData, NSUserDefaults, or Keychain. Assess encryption and access controls.</li>
+      <li>🧩 <strong>Binary Protections:</strong> Check for encryption, PIE, stack canaries, and ensure ASLR, ARC, and code signing are enforced.</li>
+      <li>🔧 <strong>Reverse Engineering:</strong> Use tools like Hopper, class-dump, and objection to inspect app internals and runtime behaviors.</li>
+      <li>🔍 <strong>Runtime Manipulation:</strong> Leverage Frida or Cycript to test for runtime hooking vulnerabilities and insecure implementation logic.</li>
+      <li>🛰 <strong>Network Communication:</strong> Ensure secure transport, validate SSL pinning, and test for MITM resistance and proper certificate handling.</li>
+      <li>🔄 <strong>Inter-Process Communication:</strong> Test for insecure custom URL schemes, Universal Links, and unprotected inter-app communication.</li>
+      <li>📉 <strong>Error & Logging:</strong> Ensure no sensitive data is leaked in logs, and crash handlers do not expose internal details.</li>
+      <li>📚 <strong>Compliance & MASVS:</strong> Map assessment results to OWASP MASVS and Apple security best practices.</li>
+    </ul>
+    <a href="../index.html" class="btn">← Back to Portfolio</a>
+  </section>
+</body>
+</html>

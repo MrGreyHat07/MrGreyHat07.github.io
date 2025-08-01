@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Pentest Checklist | MrGreyHat07</title>
+  <link rel="stylesheet" href="../style2.css">
+</head>
+<body>
+  <section class="section">
+    <h1>API Pentest Checklist</h1>
+    <ul>
+      <li>🔍 <strong>Reconnaissance:</strong> Identify all accessible endpoints, methods (GET, POST, PUT, DELETE), and documentation (Swagger/OpenAPI).</li>
+      <li>🔐 <strong>Authentication:</strong> Test for missing/weak authentication, token leaks, default creds, and improper OAuth/OpenID implementation.</li>
+      <li>🔑 <strong>Authorization:</strong> Check for IDOR, privilege escalation, role-based access control bypass, and insecure object references.</li>
+      <li>📦 <strong>Input Validation:</strong> Test for injection flaws (SQLi, NoSQLi, command injection), mass assignment, and improper input sanitization.</li>
+      <li>📤 <strong>Rate Limiting:</strong> Assess DoS resilience, brute-force protection, and abuse of unauthenticated endpoints.</li>
+      <li>🧠 <strong>Business Logic:</strong> Identify pricing manipulation, workflow tampering, and abuse of parameter relationships.</li>
+      <li>🔎 <strong>Error Handling:</strong> Ensure consistent and generic error messages, avoid stack traces or internal paths in responses.</li>
+      <li>🔒 <strong>Transport Security:</strong> Confirm HTTPS/TLS is enforced, HSTS is used, and certificates are valid and pinned (if applicable).</li>
+      <li>📄 <strong>Data Exposure:</strong> Test for PII leakage, sensitive headers, verbose responses, or metadata leaks.</li>
+      <li>📚 <strong>Compliance:</strong> Map findings to OWASP API Security Top 10 (2023) and align with industry best practices.</li>
+    </ul>
+    <a href="../index.html" class="btn">← Back to Portfolio</a>
+  </section>
+</body>
+</html>
