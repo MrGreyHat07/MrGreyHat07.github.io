@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Pentest Checklist | MrGreyHat07</title>
+  <link rel="stylesheet" href="../style2.css">
+</head>
+<body>
+  <section class="section">
+    <h1>Android Application Pentest Checklist</h1>
+    <ul>
+      <li>📦 <strong>APK Analysis:</strong> Decompile APK using tools like jadx, MobSF, and analyze AndroidManifest.xml for permissions and exported components.</li>
+      <li>🔑 <strong>Authentication & Authorization:</strong> Test for insecure login flows, session hijacking, and broken access controls.</li>
+      <li>🔐 <strong>Data Storage:</strong> Review local storage (SharedPreferences, SQLite, files) for sensitive data and enforce proper encryption.</li>
+      <li>🔍 <strong>Static Code Review:</strong> Check for hardcoded secrets, insecure APIs, and improper use of WebView or SSL.</li>
+      <li>🛰 <strong>Communication Security:</strong> Ensure use of HTTPS/TLS, verify certificate pinning, and test against MITM attacks.</li>
+      <li>📲 <strong>Intent & Component Security:</strong> Check for exposed activities, insecure broadcast receivers, and intent injection.</li>
+      <li>🔧 <strong>Reverse Engineering & Debugging:</strong> Look for debuggable flags, code obfuscation, tamper detection, and root/jailbreak checks.</li>
+      <li>🧪 <strong>Dynamic Analysis:</strong> Use Frida, Xposed, or Burp Suite to intercept and modify runtime behavior and test backend APIs.</li>
+      <li>🗂 <strong>Log & Error Handling:</strong> Ensure sensitive data is not logged and exceptions don’t expose internals.</li>
+      <li>📚 <strong>Compliance & Best Practices:</strong> Map findings to OWASP MASVS & MSTG standards for mobile application security.</li>
+    </ul>
+    <a href="../index.html" class="btn">← Back to Portfolio</a>
+  </section>
+</body>
+</html>
