@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #00ff99;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+header.cover {
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #000000 0%, #050505 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header .overlay {
+  text-align: center;
+  z-index: 2;
+}
+
+.glitch {
+  position: relative;
+  font-size: 4rem;
+  color: #00ffcc;
+  animation: glitch 1s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.glitch::before {
+  animation: glitchTop 1s infinite linear;
+  color: #ff00ff;
+  top: -2px;
+}
+
+.glitch::after {
+  animation: glitchBottom 1s infinite linear;
+  color: #00ffff;
+  top: 2px;
+}
+
+@keyframes glitch {
+  0% { transform: none; }
+  20% { transform: skew(0.5deg, 0.5deg); }
+  40% { transform: skew(-0.5deg, -0.5deg); }
+  60% { transform: skew(0.5deg, -0.5deg); }
+  80% { transform: skew(-0.5deg, 0.5deg); }
+  100% { transform: none; }
+}
+
+@keyframes glitchTop {
+  0%, 100% { transform: translate(0); }
+  50% { transform: translate(-2px, -2px); }
+}
+
+@keyframes glitchBottom {
+  0%, 100% { transform: translate(0); }
+  50% { transform: translate(2px, 2px); }
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section.dark {
+  background: #111;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border: 1px solid #00ffcc33;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffcc33;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ffcc66;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #00ffcc;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  background: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #00ffaa;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0a0a0a;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #00ff99;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00ffaa;
+}

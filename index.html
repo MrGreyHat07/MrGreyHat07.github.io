@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MrGreyHat | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @media screen and (max-width: 600px) {
+      h1.glitch {
+        font-size: 2rem;
+      }
+      .overlay p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+      .services-grid {
+        grid-template-columns: 1fr !important;
+      }
+      form input, form textarea {
+        width: 90% !important;
+      }
+      header.cover {
+        background-attachment: scroll;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="cover" id="home" style="background: url('../images/368059193-dfaa0f94-5333-481b-a806-eaa0ea1e7f2f.gif') no-repeat center center fixed; background-size: cover;">
+    <div class="overlay">
+      <h1 class="glitch" data-text="MrGreyHat">MrGreyHat</h1>
+      <p>Ethical Hacker | Pentester | Bug Hunter</p>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a professional penetration tester focused on helping businesses identify and fix security gaps before attackers can exploit them. With a strong background in ethical hacking and real-world testing, I deliver actionable insights that go beyond automated scans. My goal is to simulate realistic threats, uncover hidden risks, and provide clear, prioritized recommendations — so you can build with confidence and stay ahead of evolving cyber threats.</p>
+  </section>
+
+  <section id="skills" class="section dark">
+    <h2>Skill Highlights</h2>
+    <div class="services-grid">
+      <div class="card">Burp Suite</div>
+      <div class="card">sqlmap</div>
+      <div class="card">Hydra</div>
+      <div class="card">WPScan</div>
+      <div class="card">Metasploit</div>
+      <div class="card">Wireshark</div>
+      <div class="card">Nmap</div>
+      <div class="card">Postman</div>
+      <div class="card">Bash & Python</div>
+      <div class="card">Nessus</div>
+      <div class="card">Nuclei</div>
+      <div class="card">QRadar</div>
+      <div class="card">Splunk</div>
+      <div class="card">Linux</div>
+      <div class="card">Windows</div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+  <h2>Services</h2>
+  <div class="services-grid">
+    <div class="card"><a href="https://owasp.org/www-project-web-security-testing-guide/">OWASP Testing</a></div>
+    <div class="card"><a href="https://www.hhs.gov/hipaa/for-professionals/security/index.html">HIPAA Compliance Testing</a></div>
+    <div class="card"><a href="https://owasp.org/www-community/controls/Static_Code_Analysis">SAST</a></div>
+    <div class="card"><a href="https://owasp.org/www-community/controls/Dynamic_Application_Security_Testing">DAST</a></div>
+    <div class="card"><a href="https://owasp.org/www-project-mobile-security-testing-guide/">Android Pentesting</a></div>
+    <div class="card"><a href="https://owasp.org/www-project-mobile-security-testing-guide/">iOS Pentesting</a></div>
+    <div class="card"><a href="https://owasp.org/www-project-top-ten/">Web Application Testing</a></div>
+    <div class="card"><a href="https://owasp.org/www-project-cloud-native-application-security-top-10/">Cloud Security</a></div>
+    <div class="card"><a href="https://owasp.org/www-project-api-security/">API Security</a></div>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h3 style="color: #00ffcc; margin-bottom: 0.5rem;">📋 Detailed Checklists</h3>
+    <div class="services-grid">
+      <a href="checklists/web.html" class="card" target="_blank">🌐 Web Checklist</a>
+      <a href="checklists/android.html" class="card" target="_blank">📱 Android Checklist</a>
+      <a href="checklists/ios.html" class="card" target="_blank">🍎 iOS Checklist</a>
+      <a href="checklists/api.html" class="card" target="_blank">🔌 API Checklist</a>
+      <a href="checklists/cloud.html" class="card" target="_blank">☁️ Cloud Checklist</a>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h3 style="color: #00ffcc; margin-bottom: 0.5rem;">📄 Report Templates</h3>
+    <div class="services-grid">
+      <a href="reports/WebApp_Pentest_Report_Template.docx" class="card" target="_blank">📝 Web Report Template</a>
+      <!-- Add more templates below as needed -->
+      <!-- <a href="reports/Android_Pentest_Report_Template.docx" class="card" target="_blank">📄 Android Report</a> -->
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects" class="section dark">
+    <h2>Projects</h2>
+    <div class="services-grid">
+      <a class="card" href="https://github.com/MrGreyHat07/SHASTRA" target="_blank">🦅 SHASTRA - SQL Injection Scanner and Analyzer</a>
+      <a class="card" href="https://github.com/MrGreyHat07/Interaxx" target="_blank">📡 Interaxx - Blind SSRF Automation</a>
+      <a class="card" href="https://github.com/MrGreyHat07/ROBOTOES" target="_blank">🤖 ROBOTOES - Robots.txt Enumeration</a>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+  <h2>Experience</h2>
+
+  <div class="card experience-card">
+    <h3>🔍 Security Researcher <span>@ HackerOne</span></h3>
+    <p><strong>Duration:</strong> May 2024 – Present</p>
+    <p>
+      Identified critical vulnerabilities on major platforms, including a <strong>.git exposure on a Spotify subdomain</strong> and 
+      <strong>Reflected XSS + invoice leaks on a private programme</strong>.  
+      Contributed to responsible disclosure efforts and platform security improvements.  
+      <a href="https://hackerone.com/oggyg" target="_blank">View HackerOne Profile</a>
+    </p>
+  </div>
+
+  <div class="card experience-card">
+    <h3>🛡️ Professional Pentester Intern <span>@ Zeetron Networks (via IIHT Jaipur)</span></h3>
+    <p><strong>Duration:</strong> Dec 2023 – May 2024</p>
+    <p>
+      Performed vulnerability assessments and internal/external penetration tests.  
+      Delivered detailed reports outlining issues like <strong>SQLi</strong> and <strong>XSS</strong> with tailored remediation.  
+      Simulated real-world threat models and guided clients on risk mitigation.
+    </p>
+  </div>
+
+  <div class="card experience-card">
+    <h3>💻 Pentesting Intern <span>@ Hacktify Cyber Security</span></h3>
+    <p><strong>Duration:</strong> Feb 2024 – Mar 2024</p>
+    <p>
+      Participated in live testing and Capture The Flag labs, refining techniques in <strong>exploitation</strong>,  
+      <strong>vulnerability chaining</strong>, and report generation.  
+      Built practical experience through challenge-based security testing environments.
+    </p>
+  </div>
+</section>
+
+
+  <section id="certifications" class="section dark">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Certified Ethical Hacker (CEH) – IIHT</li>
+      <li>Certified AppSec Practitioner (CAP) – The SecOps Group</li>
+      <li>Network Defence Essentials – EC-Council</li>
+      <li>Purple Teaming Fundamentals – CyberWarFare Labs</li>
+      <li>Cyber Threat Intelligence 101 – Arcx</li>
+    </ul>
+  </section>
+
+  <section id="halloffame" class="section">
+    <h2>Hall of Fame</h2>
+    <p>Spotify | HackerOne (2024)</p>
+    <img src="../images/Screenshot 2025-08-01 150338.png" alt="Spotify HackerOne Hall of Fame" style="max-width: 100%; border-radius: 10px; margin-top: 10px;" />
+  </section>
+
+  <section id="contact" class="section dark">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 MrGreyHat07. All rights reserved.</p>
+    <div>
+      <a href="https://github.com/MrGreyHat07" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a> |
+      <a href="https://hackerone.com/oggyg" target="_blank">HackerOne</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
